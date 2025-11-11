@@ -1,0 +1,13 @@
+{
+  "encrypted_key": "jS8dQ7Cwqonf4ekEllhe+pjceiahCGdXFm4+2r4pyZC5CfRuAyhlSQLejuWb3odTcKYCWsfI9PmIHj1D+kl28KaaEwU4x95/P8sKOBIlpj59BHP/fVW0MpwJUYkg10ldRm8+Kb62Y7F0CAXXIvDifvLepqnXo7voiWupw1wPyx7bFM0fF6zb3b0tn6pJPP+qJD/ck6h3Po4wfbcUtOwCaRpj5bXbCaLbugp0vISTx7E3X+Ctdh6iVjhHSDVZxtcId1H7XGLDh68PMwJhlZNfnRFiE22hu2NMkQc2LFLOayanu15DoUSPLSeug4MDHz9fhmFL/TSv+/9YjZwIyUDeWA==",
+  "iv": "h+vSj4HFhjwzwSnJAsu2lw==",
+  "ciphertext": "LrSPwXItWLj4BFM4A8gtWn7frLcwao2sqx2+cJqcVkExJFg5DOc8oq8Y3/gmmvxD2nH2vFX2ipYIfD4hw8zwWw==",
+  "signature": "WvsgqFG0y/pKR8Rq5iAbAf38GSg4E/WDw52iHYMBlF86ZCdfmhgWUg80OdYT0qrdaLq+fKZq7iR5BqtGqzjZsBA+PQ50Uxv8Re/1E/x/SYaUDLWQdwDJAaA9hcbM12qtVchS7mmddBmh05bHjVgpti9n+Xoc5LbjERUJT5jX8s3AtHNL0zygQqK9f1NnVh3ndBvZ+p8FtZ/Ce06urN4sxoIzhuPsFbMVgpPtz8lpRZ6uNKOL4ZiyWVOUe5gXbb3gNJKrSatlzyruyRifmXgdpyPdo6r1XxnJFYIMj8Q3K3L1xnwzQ3zy2Od03SVTE3cVOuP23IdP4NaSVIshnIDMew==",
+  "filename": "message.txt",
+  "metadata": {
+    "hash": "SHA-256",
+    "signature_scheme": "RSA-PKCS1v1.5",
+    "symmetric_encryption": "AES-128-CBC",
+    "asymmetric_encryption": "RSA-2048-OAEP"
+  }
+}

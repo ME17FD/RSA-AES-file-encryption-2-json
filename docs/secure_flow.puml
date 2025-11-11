@@ -1,0 +1,34 @@
+@startuml
+title Flux de vérification du paquet JSON et erreurs possibles
+
+start
+:Début réception;
+:Charger le fichier JSON;
+if (JSON valide ?) then (oui)
+  :Décoder les champs (clé AES chiffrée, IV, ciphertext, signature);
+  if (Clé publique valide ?) then (oui)
+  if (Déchiffrer clé AES) then (succès)
+    :Clé AES récupérée;
+    if (Déchiffrement AES-CBC) then (succès)
+      :Texte clair obtenu;
+      if (Signature RSA valide ?) then (oui)
+        :Message accepté\n(integrité OK);
+      else (non)
+        :Erreur -> "Signature invalide :\nle fichier a peut-être été modifié.";
+      endif
+    else (échec)
+      :Erreur -> "Le déchiffrement AES a échoué\n(données altérées ou clé incorrecte).";
+    endif
+  else (échec)
+    :Erreur -> "Impossible de déchiffrer la clé AES\n(mauvaise clé privée ou paquet corrompu).";
+  endif
+  else (non)
+    :Erreur -> "La clé publique de l'expéditeur est invalide\nou a été modifiée.";
+  endif
+else (non)
+  :Erreur -> "Le fichier JSON du paquet est invalide\nou ne contient pas les champs attendus.";
+endif
+
+stop
+@enduml
+
